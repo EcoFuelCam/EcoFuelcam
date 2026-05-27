@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éco-Fuel Cam | Innovation & Récompenses</title>
+    <style>
+        :root { --primary: #2e7d32; --secondary: #1565c0; --accent: #ffb300; --dark: #1a1a1a; --light: #fdfdfd; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: bold; color: var(--primary); font-size: 1.4rem; }
+        .hero { padding: 4rem 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2e7d32; color: white; }
+        .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+        .section { padding: 3rem 5%; }
+        h2 { color: var(--primary); margin-bottom: 1.5rem; text-align: center; }
+        .card-award { background: #fff8e1; border: 2px solid var(--accent); border-radius: 15px; padding: 2rem; text-align: center; margin-bottom: 2rem; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .photo-item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border: 1px solid #ddd; }
+        .photo-item img { width: 100%; height: 250px; object-fit: cover; background: #eee; }
+        .photo-item p { padding: 10px; font-weight: bold; font-size: 0.9rem; }
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header><div class="logo">Éco-Fuel Cam</div></header>
+
+    <section class="hero">
+        <h1>Éco-Fuel : Vers l'Indépendance Énergétique</h1>
+        <p>Transformer les déchets plastiques en carburant au Cameroun.</p>
+    </section>
+
+    <section class="section">
+        <div class="card-award">
+            <h2 style="color: #f57f17;">🏆 Succès au Concours FOND PRO-TO</h2>
+            <p>Nous sommes fiers d'avoir remporté le <strong>12e prix</strong> national !</p>
+            <p>Une étape clé pour l'industrialisation de notre projet à Douala.</p>
+        </div>
+
+        <h2>Galerie du Projet & Récompenses</h2>
+        <div class="gallery">
+            <!-- PHOTO DU PRIX (À ajouter plus tard) -->
+            <div class="photo-item">
+                <img src="photo-concours.jpg" alt="Remise du prix FOND PRO-TO">
+                <p>Cérémonie de remise du 12e prix</p>
+            </div>
+
+            <!-- PHOTOS TECHNIQUES (Existantes) -->
+            <div class="photo-item">
+                <img src="IMG-20241018-WA0063.jpeg" alt="Prototype">
+                <p>Unité de production Éco-Fuel</p>
+            </div>
+            <div class="photo-item">
+                <img src="IMG-20241019-WA0037.jpg" alt="Maintenance">
+                <p>Maintenance technique du système</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Gaston Libii</strong></p>
+        <p>Expert en Maintenance Industrielle & Promoteur Éco-Fuel</p>
+        <p>Finalisation prévue : 27 juin 2026</p>
+    </footer>
+</body>
+</html>

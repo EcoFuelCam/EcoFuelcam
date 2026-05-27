@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éco-Fuel Cam | Innovation Durable</title>
+    <title>Éco-Fuel Cam | Portail Industriel</title>
     <style>
-        :root { 
-            --vert: #2e7d32;   
-            --bleu: #1565c0;   
-            --blanc: #ffffff;  
-            --fond: #f1f8e9;   
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-        body { background-color: var(--fond); color: #333; line-height: 1.6; }
+        :root { --vert: #2e7d32; --bleu: #1565c0; --blanc: #ffffff; --fond: #f1f8e9; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--fond); color: #333; }
 
-        nav { background: var(--blanc); padding: 1rem; position: sticky; top: 0; display: flex; justify-content: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: var(--vert); font-weight: bold; text-transform: uppercase; font-size: 0.75rem; }
-        .lang-switch { font-weight: bold; color: var(--bleu); cursor: pointer; font-size: 0.75rem; }
+        /* Menu Intelligent */
+        nav { background: var(--blanc); position: sticky; top: 0; display: flex; justify-content: center; gap: 20px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000; }
+        nav a { text-decoration: none; color: var(--vert); font-weight: bold; font-size: 0.85rem; padding: 5px 10px; border: 1px solid transparent; transition: 0.3s; }
+        nav a:hover { border-bottom: 2px solid var(--bleu); }
 
-        section { min-height: 90vh; padding: 80px 20px; max-width: 1000px; margin: auto; }
-        .card { background: var(--blanc); padding: 40px; border-radius: 15px; border-left: 5px solid var(--vert); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1, h2 { color: var(--vert); margin-bottom: 20px; }
-
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
-        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        /* Fenêtres de contenu (Modulaire) */
+        section { min-height: 100vh; padding: 100px 20px; max-width: 1100px; margin: auto; }
+        .window { background: var(--blanc); padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 10px solid var(--vert); }
         
-        .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .swot-box { padding: 15px; border-radius: 8px; border: 1px solid #ccc; }
+        h1, h2 { color: var(--vert); margin-bottom: 20px; }
+        .btn-action { display: inline-block; background: #25d366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; }
 
-        footer { background: var(--vert); color: white; text-align: center; padding: 20px; }
+        /* Zone évolutive pour futurs ajouts (Vidéos, Fichiers, etc) */
+        .future-zone { border: 2px dashed var(--vert); padding: 20px; margin-top: 20px; border-radius: 10px; }
     </style>
 </head>
 <body>
@@ -38,70 +32,64 @@
         <a href="#histoire">Histoire</a>
         <a href="#realisations">Réalisations</a>
         <a href="#swot">Analyse</a>
-        <a href="#equipe">Promoteurs</a>
+        <a href="#equipe">Équipe</a>
         <a href="#contact">Contact</a>
         <span class="lang-switch">| FR | EN</span>
     </nav>
 
     <section id="accueil">
-        <h1>Éco-Fuel Cam</h1>
-        <p>Transformer la pollution plastique en solutions énergétiques durables.</p>
+        <div class="window">
+            <h1>Éco-Fuel Cam</h1>
+            <p>Leader de la transformation des déchets plastiques en énergie propre.</p>
+        </div>
     </section>
 
     <section id="histoire">
-        <div class="card">
-            <h2>Notre Histoire : Un Engagement vers l'Industrie</h2>
-            <p>Le projet Éco-Fuel a vu le jour en 2023 au sein de l'IUT de Douala comme un projet de soutenance (année 2023-2024). Issu de la synergie d'étudiants aux visions complémentaires, il s'est unifié autour d'un objectif commun : la réduction de la pollution plastique par la pyrolyse.</p>
-            <p>Après un succès académique marqué par une mention "Excellente", l'équipe a transformé cette ambition en un projet de vie. La reconnaissance obtenue via le 12e prix au FOND PRO-TO a été un catalyseur, menant à une autonomisation technologique du système.</p>
-            <p>Aujourd'hui, 14 jeunes talents s'investissent pour faire d'Éco-Fuel une réalité industrielle, guidés par la devise : <em>« Le meilleur reste à venir »</em>.</p>
+        <div class="window">
+            <h2>Notre Histoire : De l'IUT à l'Industrie</h2>
+            <p>Le projet Éco-Fuel, né en 2023 à l'IUT de Douala, est le fruit d'une synergie académique récompensée par une mention "Excellente". Notre parcours, couronné par le 12e prix au FOND PRO-TO, témoigne de notre évolution : d'un projet de soutenance, nous avons bâti une unité de pyrolyse autonome. Guidés par l'excellence, nous avançons vers l'industrialisation avec la conviction que : <em>« Le meilleur reste à venir »</em>.</p>
         </div>
     </section>
 
     <section id="realisations">
-        <div class="card">
-            <h2>Nos Réalisations</h2>
+        <div class="window">
+            <h2>Réalisations & Preuves</h2>
             <div class="gallery">
-                <img src="Green and Orange Minimalist Nature Photo Collage.png" alt="Réussite">
-                <img src="IMG-20241018-WA0063.jpeg" alt="Prototype">
+                <img src="Green and Orange Minimalist Nature Photo Collage.png" alt="Réussite" style="width:100%; border-radius:10px;">
             </div>
-            <p style="margin-top:20px;">Galerie en cours d'enrichissement avec nos preuves de succès et développements techniques.</p>
+            <div class="future-zone">
+                <p><em>Zone réservée pour : Vidéos de production, rapports techniques PDF, et certifications.</em></p>
+            </div>
         </div>
     </section>
 
     <section id="swot">
-        <div class="card">
-            <h2>Analyse Stratégique</h2>
-            <div class="swot-grid">
-                <div class="swot-box">
-                    <h3>Forces</h3>
-                    <ul><li>Technologie innovante</li><li>Équipe soudée</li><li>Reconnaissance APME</li></ul>
-                </div>
-                <div class="swot-box">
-                    <h3>Faiblesses</h3>
-                    <ul><li>Financement industriel</li><li>Logistique de collecte</li></ul>
-                </div>
-            </div>
+        <div class="window">
+            <h2>Analyse Stratégique (SWOT)</h2>
+            <p><strong>Forces :</strong> Technologie propre, équipe multidisciplinaire, soutien institutionnel.</p>
+            <p><strong>Faiblesses :</strong> Industrialisation à financer, logistique de collecte en expansion.</p>
         </div>
     </section>
 
     <section id="equipe">
-        <div class="card">
-            <h2>Promoteurs & Porteurs du Projet</h2>
-            <p><strong>Promoteur Principal :</strong> LIBII GASTON ROMARIQUE GILDAS</p>
-            <p>Porté par une dynamique collective de 14 jeunes talents engagés.</p>
+        <div class="window">
+            <h2>Promoteurs & Porteurs</h2>
+            <p><strong>Gaston Libii</strong> - Promoteur Principal</p>
+            <p>Équipe composée de 14 talents ingénieurs.</p>
         </div>
     </section>
 
     <section id="contact">
-        <div class="card">
-            <h2>Contact</h2>
+        <div class="window">
+            <h2>Coordonnées & Partenariats</h2>
             <p><strong>Email :</strong> cameroonecofuel@gmail.com</p>
             <p><strong>WhatsApp :</strong> +237 659 251 533</p>
+            <a href="https://wa.me/237659251533" class="btn-action">Contacter l'équipe sur WhatsApp</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Éco-Fuel Cam - Tous droits réservés.</p>
+        <p>&copy; 2026 Éco-Fuel Cam - Projet en phase d'industrialisation.</p>
     </footer>
 
 </body>

@@ -3,78 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éco-Fuel Cam | Innovation Durable au Cameroun</title>
+    <title>Éco-Fuel Cam | Innovation Durable</title>
     <style>
-        :root { --primary: #2e7d32; --secondary: #1565c0; --accent: #ffb300; --dark: #1a1a1a; --light: #fdfdfd; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: var(--light); color: var(--dark); line-height: 1.6; }
-        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .logo { font-weight: bold; color: var(--primary); font-size: 1.4rem; }
-        .hero { padding: 4rem 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2e7d32; color: white; }
-        .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
-        .section { padding: 3rem 5%; }
-        h2 { color: var(--primary); margin-bottom: 1.5rem; text-align: center; }
-        .award-banner { background: #fff8e1; border: 2px solid var(--accent); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; position: relative; overflow: hidden; }
-        .award-banner::before { content: "🏆"; position: absolute; right: 10px; bottom: 10px; font-size: 5rem; opacity: 0.1; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .photo-item { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #eee; }
-        .photo-item img { width: 100%; height: 300px; object-fit: cover; background: #f0f0f0; }
-        .photo-desc { padding: 1.5rem; }
-        .photo-desc h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem; }
-        .photo-desc p { font-size: 0.95rem; color: #444; }
-        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
-        .tag { display: inline-block; background: var(--primary); color: white; padding: 2px 10px; border-radius: 5px; font-size: 0.8rem; margin-bottom: 5px; }
+        :root { 
+            --vert: #2e7d32;   
+            --bleu: #1565c0;   
+            --blanc: #ffffff;  
+            --fond: #f1f8e9;   
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--fond); color: #333; line-height: 1.6; }
+
+        nav { background: var(--blanc); padding: 1rem; position: sticky; top: 0; display: flex; justify-content: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: var(--vert); font-weight: bold; text-transform: uppercase; font-size: 0.75rem; }
+        .lang-switch { font-weight: bold; color: var(--bleu); cursor: pointer; font-size: 0.75rem; }
+
+        section { min-height: 90vh; padding: 80px 20px; max-width: 1000px; margin: auto; }
+        .card { background: var(--blanc); padding: 40px; border-radius: 15px; border-left: 5px solid var(--vert); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h1, h2 { color: var(--vert); margin-bottom: 20px; }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        
+        .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .swot-box { padding: 15px; border-radius: 8px; border: 1px solid #ccc; }
+
+        footer { background: var(--vert); color: white; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
-    <header><div class="logo">Éco-Fuel Cam</div></header>
 
-    <section class="hero">
-        <h1>Transformer la Pollution en Solution</h1>
-        <p>Expertise camerounaise en pyrolyse pour une énergie propre et circulaire.</p>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#histoire">Histoire</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#swot">Analyse</a>
+        <a href="#equipe">Promoteurs</a>
+        <a href="#contact">Contact</a>
+        <span class="lang-switch">| FR | EN</span>
+    </nav>
+
+    <section id="accueil">
+        <h1>Éco-Fuel Cam</h1>
+        <p>Transformer la pollution plastique en solutions énergétiques durables.</p>
     </section>
 
-    <section class="section">
-        <div class="award-banner">
-            <div class="tag">Événement FOND PRO-TO</div>
-            <h2>Une Reconnaissance Nationale</h2>
-            <p>Le projet <strong>Éco-Fuel</strong> a été distingué par le <strong>12e prix</strong> au concours du <strong>FOND PRO-TO</strong> organisé par l'APME. Ce prix valide notre technologie de conversion des déchets plastiques en gazole et essence synthétique, renforçant notre mission pour l'indépendance énergétique du Cameroun.</p>
+    <section id="histoire">
+        <div class="card">
+            <h2>Notre Histoire : Un Engagement vers l'Industrie</h2>
+            <p>Le projet Éco-Fuel a vu le jour en 2023 au sein de l'IUT de Douala comme un projet de soutenance (année 2023-2024). Issu de la synergie d'étudiants aux visions complémentaires, il s'est unifié autour d'un objectif commun : la réduction de la pollution plastique par la pyrolyse.</p>
+            <p>Après un succès académique marqué par une mention "Excellente", l'équipe a transformé cette ambition en un projet de vie. La reconnaissance obtenue via le 12e prix au FOND PRO-TO a été un catalyseur, menant à une autonomisation technologique du système.</p>
+            <p>Aujourd'hui, 14 jeunes talents s'investissent pour faire d'Éco-Fuel une réalité industrielle, guidés par la devise : <em>« Le meilleur reste à venir »</em>.</p>
         </div>
+    </section>
 
-        <h2>Galerie & Impact du Projet</h2>
-        <div class="gallery">
-            <!-- PHOTO DU PRIX -->
-            <div class="photo-item">
-                <img src="photo-concours.jpg" alt="Remise de prix Éco-Fuel">
-                <div class="photo-desc">
-                    <h3>Célébration du 12e Prix</h3>
-                    <p>Moment symbolique récompensant des mois de recherche et de prototypage pour une solution écologique durable.</p>
+    <section id="realisations">
+        <div class="card">
+            <h2>Nos Réalisations</h2>
+            <div class="gallery">
+                <img src="Green and Orange Minimalist Nature Photo Collage.png" alt="Réussite">
+                <img src="IMG-20241018-WA0063.jpeg" alt="Prototype">
+            </div>
+            <p style="margin-top:20px;">Galerie en cours d'enrichissement avec nos preuves de succès et développements techniques.</p>
+        </div>
+    </section>
+
+    <section id="swot">
+        <div class="card">
+            <h2>Analyse Stratégique</h2>
+            <div class="swot-grid">
+                <div class="swot-box">
+                    <h3>Forces</h3>
+                    <ul><li>Technologie innovante</li><li>Équipe soudée</li><li>Reconnaissance APME</li></ul>
+                </div>
+                <div class="swot-box">
+                    <h3>Faiblesses</h3>
+                    <ul><li>Financement industriel</li><li>Logistique de collecte</li></ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- PHOTO TECHNIQUE 1 -->
-            <div class="photo-item">
-                <img src="IMG-20241018-WA0063.jpeg" alt="Unité de production">
-                <div class="photo-desc">
-                    <h3>Technologie de Pyrolyse</h3>
-                    <p>Notre unité pilote transforme les déchets plastiques non recyclables en carburants liquides de haute qualité.</p>
-                </div>
-            </div>
+    <section id="equipe">
+        <div class="card">
+            <h2>Promoteurs & Porteurs du Projet</h2>
+            <p><strong>Promoteur Principal :</strong> LIBII GASTON ROMARIQUE GILDAS</p>
+            <p>Porté par une dynamique collective de 14 jeunes talents engagés.</p>
+        </div>
+    </section>
 
-            <!-- PHOTO TECHNIQUE 2 -->
-            <div class="photo-item">
-                <img src="IMG-20241019-WA0037.jpg" alt="Maintenance technique">
-                <div class="photo-desc">
-                    <h3>Expertise en Maintenance</h3>
-                    <p>Sous la direction de Gaston Libii, nous assurons une rigueur technique totale sur l'installation et les systèmes électriques.</p>
-                </div>
-            </div>
+    <section id="contact">
+        <div class="card">
+            <h2>Contact</h2>
+            <p><strong>Email :</strong> cameroonecofuel@gmail.com</p>
+            <p><strong>WhatsApp :</strong> +237 659 251 533</p>
         </div>
     </section>
 
     <footer>
-        <p><strong>Gaston Romarique Gildas Libii</strong> - CEO Éco-Fuel Cam</p>
-        <p>Douala, Cameroun | Contact : gastonlibii55@gmail.com</p>
+        <p>&copy; 2026 Éco-Fuel Cam - Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>

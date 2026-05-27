@@ -5,96 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Éco-Fuel Cam | Innovation & Impact</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; }
-        header { background: #2e7d32; color: white; padding: 2.5rem 1.5rem; text-align: center; }
-        header h1 { margin: 0; font-size: 2.2rem; }
-        header p { margin: 5px 0 0 0; opacity: 0.9; font-size: 1.1rem; }
-        .section { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .fond-pro-to { background: #e8f5e9; padding: 20px; border-left: 5px solid #2e7d32; margin: 20px 0; border-radius: 0 8px 8px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h2 { color: #2e7d32; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; margin-top: 30px; text-align: center; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
-        .gallery-item { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border: 1px solid #e0e0e0; }
-        .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
-        .caption { padding: 12px; font-size: 0.9rem; text-align: center; font-weight: 500; color: #555; }
-        footer { background: #1a1a1a; color: white; text-align: center; padding: 2rem 1.5rem; margin-top: 40px; }
+        :root { --primary: #2e7d32; --secondary: #1565c0; --dark: #1a1a1a; --light: #f4f4f4; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--light); color: #333; line-height: 1.6; }
+
+        /* Navigation */
+        nav { background: white; height: 70px; display: flex; justify-content: space-around; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-weight: bold; color: var(--primary); font-size: 1.5rem; text-decoration: none; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: #333; font-weight: 500; }
+
+        /* Hero & Sections */
+        .hero { height: 350px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2e7d32; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { color: var(--primary); margin-bottom: 20px; border-left: 5px solid var(--primary); padding-left: 15px; }
+
+        /* Contact Section */
+        .contact-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .contact-item { padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; }
+        .btn-whatsapp { display: inline-block; background: #25d366; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 30px; margin-top: 50px; }
     </style>
 </head>
 <body>
-    <header>
+
+    <nav>
+        <a href="#" class="logo">ÉCO-FUEL CAM</a>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="accueil" class="hero">
         <h1>Éco-Fuel Cam</h1>
-        <p>Valorisation des déchets plastiques en carburants synthétiques au Cameroun.</p>
-    </header>
+        <p>Transformer les déchets plastiques en gazole, essence et gaz méthane.</p>
+    </div>
 
-    <section class="section">
-        <div class="fond-pro-to">
-            <h2>🏆 Lauréat du FOND PRO-TO</h2>
-            <p>Le projet <strong>Éco-Fuel</strong> a fièrement remporté le <strong>12e prix</strong> au concours du FOND PRO-TO organisé par l'APME. Ce soutien est un moteur essentiel pour notre mission de lutte contre la pollution et pour l'indépendance énergétique nationale.</p>
-        </div>
+    <div class="container">
+        <!-- HISTOIRE -->
+        <section id="histoire" class="card">
+            <h2>Notre Histoire</h2>
+            <p>Né à l'IUT de Douala en 2023, Éco-Fuel est le fruit d'une ambition commune de jeunes ingénieurs camerounais. Lauréat du 12e prix au FOND PRO-TO, notre projet vise l'industrialisation pour un impact environnemental et social majeur.</p>
+        </section>
 
-        <h2>📸 Galerie du Projet</h2>
-        <div class="gallery">
-            
-            <!-- PHOTO 1: COLLAGE PRINCIPAL -->
-            <div class="gallery-item">
-                <img src="Green and Orange Minimalist Nature Photo Collage.png" alt="Collage Éco-Fuel">
-                <div class="caption">Présentation du projet Éco-Fuel Cam</div>
+        <!-- CONTACT DU PROJET -->
+        <section id="contact" class="card">
+            <h2>Coordonnées Officielles</h2>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <strong>📧 Email du Projet</strong><br>
+                    cameroonecofuel@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Téléphone & WhatsApp</strong><br>
+                    +237 659 251 533<br>
+                    <a href="https://wa.me/237659251533" class="btn-whatsapp">Nous écrire sur WhatsApp</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📍 Siège Social</strong><br>
+                    Douala, Cameroun
+                </div>
             </div>
-
-            <!-- PHOTO 2 -->
-            <div class="gallery-item">
-                <img src="IMG-20241018-WA0063.jpeg" alt="Prototype">
-                <div class="caption">Unité de pyrolyse en développement</div>
-            </div>
-
-            <!-- PHOTO 3 -->
-            <div class="gallery-item">
-                <img src="IMG-20241019-WA0017-1.jpg" alt="Technique">
-                <div class="caption">Phase de test et réglages</div>
-            </div>
-
-            <!-- PHOTO 4 -->
-            <div class="gallery-item">
-                <img src="IMG-20241019-WA0074.jpg" alt="Éco-Fuel">
-                <div class="caption">Suivi de la production</div>
-            </div>
-
-            <!-- PHOTO 5 -->
-            <div class="gallery-item">
-                <img src="IMG-20241019-WA0081-1.jpg" alt="Expertise">
-                <div class="caption">Optimisation des systèmes</div>
-            </div>
-
-            <!-- PHOTO 6 -->
-            <div class="gallery-item">
-                <img src="IMG-20241025-WA0022.jpg" alt="Maintenance">
-                <div class="caption">Maintenance des armoires électriques</div>
-            </div>
-
-            <!-- PHOTO 7 -->
-            <div class="gallery-item">
-                <img src="IMG-20241025-WA0028.jpg" alt="Sécurité">
-                <div class="caption">Contrôle de sécurité de l'unité</div>
-            </div>
-
-            <!-- PHOTO 8 -->
-            <div class="gallery-item">
-                <img src="IMG_20241018_184722_050.jpg" alt="Réacteur">
-                <div class="caption">Détails techniques du réacteur</div>
-            </div>
-
-            <!-- PHOTO 9 -->
-            <div class="gallery-item">
-                <img src="IMG_20241020_093058_610.jpg" alt="Équipe">
-                <div class="caption">Intervention technique sur site</div>
-            </div>
-
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
-        <p><strong>Gaston Libii</strong> | Promoteur Éco-Fuel Cam</p>
-        <p>Douala, Cameroun | Finalisation prévue : 27 juin 2026</p>
-        <p>Email : gastonlibii55@gmail.com</p>
+        <p><strong>Éco-Fuel Cam</strong> © 2026 - Tous droits réservés</p>
+        <p>Promoteur : LIBII GASTON ROMARIQUE GILDAS</p>
     </footer>
+
 </body>
 </html>
